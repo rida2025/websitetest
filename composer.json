@@ -1,11 +1,11 @@
 {
-    "environments": {
-      "test": {
-        "scripts": {
-          "test-setup": "heroku-buildpack-php-main/bin/heroku-php-apache2 >/dev/null 2>&1 & sleep 5",
-          "test": "codecept run"
-        }
-      }
+    "require" : {
+      "silex/silex": "^2.0.4",
+      "monolog/monolog": "^1.22",
+      "twig/twig": "^2.0",
+      "symfony/twig-bridge": "^3"
+    },
+    "require-dev": {
+      "heroku-buildpack-php": "*"
     }
-  }
-  
+}
