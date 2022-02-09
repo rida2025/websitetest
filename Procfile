@@ -1,2 +1,2 @@
-web: heroku-php-apache2 app/webroot/
+web: vendor/bin/heroku-php-apache2
 web: node app.js
