@@ -68,10 +68,12 @@ session_start();
                         exit();
                     } else {
                         header("Location: register.php?signup=error");
+                        echo 'not working';
                         exit();
                     }                
                 } else {
                     header("Location: register.php?signup=error");
+                    echo 'not working';
                     exit();
                 }
             } else {
