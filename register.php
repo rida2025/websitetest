@@ -7,7 +7,7 @@ session_start();
   //f u
   if( isset($_SESSION['userid']))
 {
-  header('Location: index.html');
+  header('Location: index.php');
   exit;
 }else if( isset($_COOKIE['rememberme'] )){
   // pass the name to a var
@@ -21,7 +21,7 @@ session_start();
   $count = $stmt->fetchColumn();
   if( $count > 0 ){
      $_SESSION['user_id'] = $userid; 
-     header('Location: index.html');
+     header('Location: index.php');
      exit;
   }
 }
