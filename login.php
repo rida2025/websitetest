@@ -6,7 +6,7 @@ session_start();
   // Check if $_SESSION or $_COOKIE already set
 if( isset($_SESSION['userid']))
 {
-  header('Location: home.php');
+  header('Location: index.html');
   exit;
 }else if( isset($_COOKIE['rememberme'] )){
   // pass the name to a var
@@ -20,7 +20,7 @@ if( isset($_SESSION['userid']))
   $count = $stmt->fetchColumn();
   if( $count > 0 ){
      $_SESSION['user_id'] = $userid; 
-     header('Location: home.php');
+     header('Location: index.html');
      exit;
   }
 }
@@ -47,7 +47,7 @@ if( isset($_SESSION['userid']))
               setcookie ("rememberme",$value,time()+ ($days * 24 * 60 * 60 * 1000));
              }
               $_SESSION['user_id'] = $result['wid'];
-                header("Location: home.php");
+                header("Location: index.html");
                   exit();
                   }
               }
