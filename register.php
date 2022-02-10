@@ -48,8 +48,8 @@ session_start();
                 if(!$result) {
                     //save to database
                     $wpassword = password_hash($wpassword, PASSWORD_DEFAULT);
-                    $query = "INSERT INTO wuser (wname , wemail , wpassword , access_level)
-			                        values (:name,:email,:pwd,'user')";
+                    $query = "INSERT INTO wuser (wname , wemail , wpassword , access_level, img_dir)
+			                        values (:name,:email,:pwd,'user','uploads/default.jpg')";
                     $stmt = $conn->prepare($query);
                     $stmt->bindParam(':name', $wname);
                     $stmt->bindParam(':email', $wemail);
