@@ -4,7 +4,7 @@ session_start();
 	include("functions.php");
   
   // Check if $_SESSION or $_COOKIE already set
-if( isset($_SESSION['wid']))
+if( isset($_SESSION['userid']))
 {
   header('Location: index.php');
   exit;
