@@ -74,7 +74,7 @@ else{
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="home.php" class="logo d-flex align-items-center">
+      <a href="index.php" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
         <span class="d-none d-lg-block">Rush To Learn</span>
       </a>
@@ -309,7 +309,7 @@ else{
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="home.php">
+        <a class="nav-link " href="index.php">
           <i class="bi bi-grid"></i>
           <span>Home</span>
         </a>
@@ -691,7 +691,7 @@ else{
                     <div class="row mb-3">
                       <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Full Name</label>
                       <div class="col-md-8 col-lg-9">
-                        <input name="fullName" type="text" class="form-control" id="fullName" placeholder="<?php echo $user_data[0]["fullName"];?>">
+                        <input name="fullName" type="text" class="form-control" id="fullName" value="<?php echo $user_data[0]["fullName"];?>">
                       </div>
                     </div>
 
