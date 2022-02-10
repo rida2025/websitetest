@@ -684,55 +684,55 @@ $profile_data = display_profile($conn);
           <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
             <div class="icon-box">
               <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-              <h3><a href="">still thinking about</a></h3>
+              <h3><a href="">مزال كيتقرر</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
               <i class="ri-database-2-line" style="color: #47aeff;"></i>
-              <h3><a href="">still thinking about</a></h3>
+              <h3><a href="">مزال كيتقرر</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
               <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-              <h3><a href="">still thinking about</a></h3>
+              <h3><a href="">مزال كيتقرر</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
               <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-              <h3><a href="">still thinking about</a></h3>
+              <h3><a href="">مزال كيتقرر</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
               <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
-              <h3><a href="">still thinking about</a></h3>
+              <h3><a href="">مزال كيتقرر</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
               <i class="ri-anchor-line" style="color: #b2904f;"></i>
-              <h3><a href="">still thinking about</a></h3>
+              <h3><a href="">مزال كيتقرر</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
               <i class="ri-disc-line" style="color: #b20969;"></i>
-              <h3><a href="">still thinking about</a></h3>
+              <h3><a href="">مزال كيتقرر</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
               <i class="ri-base-station-line" style="color: #ff5828;"></i>
-              <h3><a href="">still thinking about</a></h3>
+              <h3><a href="">مزال كيتقرر</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
               <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
-              <h3><a href="">still thinking about</a></h3>
+              <h3><a href="">مزال كيتقرر</a></h3>
             </div>
           </div>
         </div>
