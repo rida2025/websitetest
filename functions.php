@@ -3,7 +3,7 @@
 function check_login($conn)
 {
 
-	if(isset($_SESSION['wname']))
+	if(isset($_SESSION['wid']))
 	{
 
 		//read from database
@@ -52,7 +52,7 @@ function encrypt_decrypt($action, $string) {
 function display_mycourses($conn)
 {
 
-	if(isset($_SESSION['wname']))
+	if(isset($_SESSION['wid']))
 	{
 	
 		//read from database
@@ -91,7 +91,7 @@ function display_mycourses($conn)
 
 function display_profile($conn)
 {
-	if(isset($_SESSION['wname']))
+	if(isset($_SESSION['wid']))
 	{
 	
 		//read from database
