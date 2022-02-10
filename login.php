@@ -19,7 +19,7 @@ if( isset($_SESSION['userid']))
   $stmt->execute(); 
   $count = $stmt->fetchColumn();
   if( $count > 0 ){
-     $_SESSION['user_id'] = $userid; 
+     $_SESSION['wname'] = $userid; 
      header('Location: index.php');
      exit;
   }
