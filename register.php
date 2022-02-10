@@ -48,7 +48,7 @@ session_start();
                 if(!$result) {
                     //save to database
                     $wpassword = password_hash($wpassword, PASSWORD_DEFAULT);
-                    $query = "INSERT INTO wuser ( wname , wemail , wpassword , access_level)
+                    $query = "INSERT INTO wuser (wname , wemail , wpassword , access_level)
 			                        values (:name,:email,:pwd,'user')";
                     $stmt = $conn->prepare($query);
                     $stmt->bindParam(':name', $wname);
