@@ -5,6 +5,8 @@ require("connection.php");
 require("functions.php");
 
 $user_data = check_login($conn);
+
+$profile_data = display_profile($conn);
 ?>
 
 <!DOCTYPE html>
@@ -229,8 +231,8 @@ $user_data = check_login($conn);
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
-              <h6>Mohammed Reda</h6>
-              <span>Coder</span>
+              <h6><?php echo $profile_data[0]['fullName'];?></h6>
+              <span><?php echo $profile_data[0]['specialty'];?></span>
             </li>
             <li>
               <hr class="dropdown-divider">
@@ -584,22 +586,22 @@ $user_data = check_login($conn);
         <div class="row counters">
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="1232" data-purecounter-duration="1" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end="1232" data-purecounter-duration="1" class="purecounter">10</span>
             <p>Students</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="64" data-purecounter-duration="1" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end="64" data-purecounter-duration="1" class="purecounter">10</span>
             <p>Courses</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="1" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="1" class="purecounter">10</span>
             <p>Events</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter">10</span>
             <p>Trainers</p>
           </div>
 
@@ -754,16 +756,16 @@ $user_data = check_login($conn);
               <img src="assets/img/course-1.jpg" class="img-fluid" alt="...">
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4>Web Development</h4>
+                  <h4>Web Dev</h4>
                   <p class="price">2000dh</p>
                 </div>
 
                 <h3><a href="course-details.html">Website Design</a></h3>
-                <p>still thinking of details.</p>
+                <p>still thinking of details.still thinking of details.still thinking of details.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
                     <img src="assets/img/trainers/reda.png" class="img-fluid" alt="">
-                    <span>reda</span>
+                    <span>test name</span>
                   </div>
                   <div class="trainer-rank d-flex align-items-center">
                     <i class="bx bx-user"></i>&nbsp;50
@@ -785,11 +787,11 @@ $user_data = check_login($conn);
                 </div>
 
                 <h3><a href="course-details.html">Search Engine Optimization</a></h3>
-                <p>still thinking of details.</p>
+                <p>still thinking of details.still thinking of details.still thinking of details.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
                     <img src="assets/img/trainers/reda.png" class="img-fluid" alt="">
-                    <span>reda</span>
+                    <span>test name</span>
                   </div>
                   <div class="trainer-rank d-flex align-items-center">
                     <i class="bx bx-user"></i>&nbsp;35
@@ -806,16 +808,16 @@ $user_data = check_login($conn);
               <img src="assets/img/course-3.jpg" class="img-fluid" alt="...">
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4>Content</h4>
+                  <h4>test content</h4>
                   <p class="price">1000dh</p>
                 </div>
 
                 <h3><a href="course-details.html">Copywriting</a></h3>
-                <p>still thinking of details.</p>
+                <p>still thinking of details.still thinking of details.still thinking of details.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
                     <img src="assets/img/trainers/reda.png" class="img-fluid" alt="">
-                    <span>reda</span>
+                    <span>test name</span>
                   </div>
                   <div class="trainer-rank d-flex align-items-center">
                     <i class="bx bx-user"></i>&nbsp;20
@@ -841,8 +843,8 @@ $user_data = check_login($conn);
             <div class="member">
               <img src="assets/img/trainers/reda.png" class="img-fluid" alt="">
               <div class="member-content">
-                <h4>reda</h4>
-                <span>Web Development</span>
+                <h4>test name</h4>
+                <span>test content</span>
                 <p>
                 doesn't have yet
                 </p>
@@ -860,8 +862,8 @@ $user_data = check_login($conn);
             <div class="member">
               <img src="assets/img/trainers/reda.png" class="img-fluid" alt="">
               <div class="member-content">
-                <h4>reda</h4>
-                <span>Marketing</span>
+                <h4>test name</h4>
+                <span>test content</span>
                 <p>
                 doesn't have yet
                 </p>
@@ -879,8 +881,8 @@ $user_data = check_login($conn);
             <div class="member">
               <img src="assets/img/trainers/reda.png" class="img-fluid" alt="">
               <div class="member-content">
-                <h4>reda</h4>
-                <span>Content</span>
+                <h4>test name</h4>
+                <span>test content</span>
                 <p>
                   doesn't have yet
                 </p>
@@ -964,7 +966,7 @@ $user_data = check_login($conn);
           <!-- You can delete the links only if you purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/ -->
-          Designed by <a href="https://bootstrapmade.com/">Mohammed Reda El Jirari</a>
+          Designed and dev by <a href="https://bootstrapmade.com/">Mohammed Reda El Jirari</a>
         </div>
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0">
