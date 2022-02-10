@@ -2,6 +2,8 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
+$from = 'theemailyousent@gmail.com';
+ini_set('sendmail_from', $from);
 $to      = 'ridaeljirari@gmail.com';
 $subject = 'the subject';
 $message = 'hello';
