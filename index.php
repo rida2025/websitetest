@@ -96,9 +96,9 @@ $profile_data = display_profile($conn);
             <li class="notification-item">
               <i class="bi bi-exclamation-circle text-warning"></i>
               <div>
-                <h4>Lorem Ipsum</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>30 min. ago</p>
+                <h4>test warning</h4>
+                <p>test content</p>
+                <p>test time</p>
               </div>
             </li>
 
@@ -109,9 +109,9 @@ $profile_data = display_profile($conn);
             <li class="notification-item">
               <i class="bi bi-x-circle text-danger"></i>
               <div>
-                <h4>Atque rerum nesciunt</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>1 hr. ago</p>
+                <h4>test problem</h4>
+                <p>test content</p>
+                <p>test time</p>
               </div>
             </li>
 
@@ -122,9 +122,9 @@ $profile_data = display_profile($conn);
             <li class="notification-item">
               <i class="bi bi-check-circle text-success"></i>
               <div>
-                <h4>Sit rerum fuga</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>2 hrs. ago</p>
+                <h4>test good</h4>
+                <p>test content</p>
+                <p>test time</p>
               </div>
             </li>
 
@@ -135,9 +135,9 @@ $profile_data = display_profile($conn);
             <li class="notification-item">
               <i class="bi bi-info-circle text-primary"></i>
               <div>
-                <h4>Dicta reprehenderit</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>4 hrs. ago</p>
+                <h4>test info</h4>
+                <p>test content</p>
+                <p>test time</p>
               </div>
             </li>
 
@@ -172,9 +172,9 @@ $profile_data = display_profile($conn);
               <a href="#">
                 <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
                 <div>
-                  <h4>Maria Hudson</h4>
-                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
-                  <p>4 hrs. ago</p>
+                  <h4>person 1</h4>
+                  <p>test the content of the msg</p>
+                  <p>test time</p>
                 </div>
               </a>
             </li>
@@ -186,9 +186,9 @@ $profile_data = display_profile($conn);
               <a href="#">
                 <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
                 <div>
-                  <h4>Anna Nelson</h4>
-                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
-                  <p>6 hrs. ago</p>
+                  <h4>person 2</h4>
+                  <p>test the content of the msg</p>
+                  <p>test time</p>
                 </div>
               </a>
             </li>
@@ -200,9 +200,9 @@ $profile_data = display_profile($conn);
               <a href="#">
                 <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
                 <div>
-                  <h4>David Muldon</h4>
-                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
-                  <p>8 hrs. ago</p>
+                  <h4>person 3</h4>
+                  <p>test the content of the msg</p>
+                  <p>test time</p>
                 </div>
               </a>
             </li>
