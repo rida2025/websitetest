@@ -54,17 +54,18 @@ $profile_data = display_profile($conn);
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.php" class="logo d-flex align-items-center">
+      <a href="home.php" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
         <span class="d-none d-lg-block">Rush To Learn</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
 
-    <div class="search-bar">
+    <div class="search-bar container">
       <form class="search-form d-flex align-items-center" method="POST" action="#">
-        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+      <input type="text" name="names" class="search" id="search" placeholder="Search" title="Enter search keyword">
         <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+        <ul class="ulstyle1"><div class="searchs" id="display"></div></ul>
       </form>
     </div><!-- End Search Bar -->
 
@@ -96,9 +97,9 @@ $profile_data = display_profile($conn);
             <li class="notification-item">
               <i class="bi bi-exclamation-circle text-warning"></i>
               <div>
-                <h4>test warning</h4>
-                <p>test content</p>
-                <p>test time</p>
+                <h4>Lorem Ipsum</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>30 min. ago</p>
               </div>
             </li>
 
@@ -109,9 +110,9 @@ $profile_data = display_profile($conn);
             <li class="notification-item">
               <i class="bi bi-x-circle text-danger"></i>
               <div>
-                <h4>test problem</h4>
-                <p>test content</p>
-                <p>test time</p>
+                <h4>Atque rerum nesciunt</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>1 hr. ago</p>
               </div>
             </li>
 
@@ -122,9 +123,9 @@ $profile_data = display_profile($conn);
             <li class="notification-item">
               <i class="bi bi-check-circle text-success"></i>
               <div>
-                <h4>test good</h4>
-                <p>test content</p>
-                <p>test time</p>
+                <h4>Sit rerum fuga</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>2 hrs. ago</p>
               </div>
             </li>
 
@@ -135,9 +136,9 @@ $profile_data = display_profile($conn);
             <li class="notification-item">
               <i class="bi bi-info-circle text-primary"></i>
               <div>
-                <h4>test info</h4>
-                <p>test content</p>
-                <p>test time</p>
+                <h4>Dicta reprehenderit</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>4 hrs. ago</p>
               </div>
             </li>
 
@@ -172,9 +173,9 @@ $profile_data = display_profile($conn);
               <a href="#">
                 <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
                 <div>
-                  <h4>person 1</h4>
-                  <p>test the content of the msg</p>
-                  <p>test time</p>
+                  <h4>Maria Hudson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>4 hrs. ago</p>
                 </div>
               </a>
             </li>
@@ -186,9 +187,9 @@ $profile_data = display_profile($conn);
               <a href="#">
                 <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
                 <div>
-                  <h4>person 2</h4>
-                  <p>test the content of the msg</p>
-                  <p>test time</p>
+                  <h4>Anna Nelson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>6 hrs. ago</p>
                 </div>
               </a>
             </li>
@@ -200,9 +201,9 @@ $profile_data = display_profile($conn);
               <a href="#">
                 <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
                 <div>
-                  <h4>person 3</h4>
-                  <p>test the content of the msg</p>
-                  <p>test time</p>
+                  <h4>David Muldon</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>8 hrs. ago</p>
                 </div>
               </a>
             </li>
@@ -289,7 +290,7 @@ $profile_data = display_profile($conn);
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="index.php">
+        <a class="nav-link " href="home.php">
           <i class="bi bi-grid"></i>
           <span>Home</span>
         </a>
@@ -684,55 +685,55 @@ $profile_data = display_profile($conn);
           <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
             <div class="icon-box">
               <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-              <h3><a href="">مزال كيتقرر</a></h3>
+              <h3><a href="">still thinking about</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
               <i class="ri-database-2-line" style="color: #47aeff;"></i>
-              <h3><a href="">مزال كيتقرر</a></h3>
+              <h3><a href="">still thinking about</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
               <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-              <h3><a href="">مزال كيتقرر</a></h3>
+              <h3><a href="">still thinking about</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
               <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-              <h3><a href="">مزال كيتقرر</a></h3>
+              <h3><a href="">still thinking about</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
               <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
-              <h3><a href="">مزال كيتقرر</a></h3>
+              <h3><a href="">still thinking about</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
               <i class="ri-anchor-line" style="color: #b2904f;"></i>
-              <h3><a href="">مزال كيتقرر</a></h3>
+              <h3><a href="">still thinking about</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
               <i class="ri-disc-line" style="color: #b20969;"></i>
-              <h3><a href="">مزال كيتقرر</a></h3>
+              <h3><a href="">still thinking about</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
               <i class="ri-base-station-line" style="color: #ff5828;"></i>
-              <h3><a href="">مزال كيتقرر</a></h3>
+              <h3><a href="">still thinking about</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
               <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
-              <h3><a href="">مزال كيتقرر</a></h3>
+              <h3><a href="">still thinking about</a></h3>
             </div>
           </div>
         </div>
@@ -988,6 +989,8 @@ $profile_data = display_profile($conn);
   <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
   <script src="assets/vendor/tinymce/tinymce.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
